@@ -4,8 +4,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>Title</title>
+	<!-- stylesheet from bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+	<!-- stylesheet I created -->
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+	<!-- jQueries for bootstrap -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
@@ -13,7 +17,6 @@
 <body>
 
 <!-- nav bar and buttons with collapse toggle -->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<a class="navbar-brand" href="">PC Builder</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -23,43 +26,146 @@
 
 <!-- nav contents with nav styles -->
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav mr-auto">
+<ul class="navbar-nav ml-auto">
 	<li class="nav-item active">
 		<a class="nav-link" href="">the plan <span class="sr-only"></span></a></li>
 	<li class="nav-item">
-		<a class="nav-link active">dumb</a></li>
+		<a class="nav-link active" href="">dumb</a></li>
 	<li class="nav-item">
-		<a class="nav-link active">stupid</a></li>
+		<a class="nav-link active" href="">stupid</a></li>
 	<li class="nav-item">
-		<a class="nav-link active">Stoopid</a></li>
+		<a class="nav-link active" href="">Stoopid</a></li>
 	<li class="nav-item">
-		<a class="nav-link active">astoop</a></li>
+		<a class="nav-link active" href="">astoop</a></li>
 </ul>
 </div>
 </nav>
-<div class="jumbotron p-3 mb-2 bg-dark text-white">
-<h1 class="display-2">Jumbotron in the house</h1>
-	<p class="lead">just some sample text for this jumbotron.</p>
-	<hr class="my-4">
+
+<!-- JumboTron for challenge -->
+<section class="py-4 px-2">
+<div class="jumbotron p-5 my-5 mx-2 bg-dark text-white">
+<h1 class="display-4">Jumbotron in the house</h1>
+	<p class="lead mt-4">just some sample text for this jumbotron.</p>
+	<hr class="my-2">
 	<p>more sample text above learn more</p>
 	<p class="lead">
 		<a class="btn btn-primary btn-lg" href="" role="button">learn more</a>
 	</p>
 </div>
+</section>
 
-	<div class="media">
-		<img src="https://i.pinimg.com/236x/81/d7/a2/81d7a28617cbb3a7024a69b1aae4daad--pixel-art-game-art.jpg" alt="vaporwave af" class="mr-3">
-		<div class="media-body">
-			<h5 class="mt-2 mr-3">this one aesthetic boi</h5>
-				jdsoiafjoidsajfoisdajfoisadjofjadsonfois
-				danfoisdanfojasdofjd
-				sdajfiodsajfoiasjfoiasjdopifjasdoifjoiasdjfoisadjfo
-				ijsadoifjasdoijfoisadjfoiasdj
-				fsdajoifasdoifnoisadnfoiasndfoinasdiofnaosidnfp
-				dsanfpoasndfoidsanfoijas
-				fdsaiofnpasodinfoisdanfoiasnfdpoinsadoipfnpaos
-				dnfiopdasnfoinsda
+<!-- section containing image with text that stack in mobile view -->
+<section class="bg-dark text-white py-5">
+	<div class="container mb-2">
+		<div class="row">
+			<div class="col-lg-4">
+				<img class="img-fluid mx-auto d-block" src="https://preview.redd.it/e5cqpr6u9vv31.png?width=960&crop=smart&auto=webp&s=ed24783edfdcb10edfc8bf23bb6eff63e1b75be0"
+					  alt="Responsive image">
+			</div>
+			<div class="col-lg-8">
+				<p class="py-2 mx-1 h1">Look At This Dood</p>
+				<p class="text-break">
+				jds oiafj oid sajf oisda
+				jfoi sa djofja
+				dso nfois
+				dan fois dan foja
+				sdaj fiods ajfoi asjfo
+				iasjd opifjam adjfo
+				ijsa doifjas d oijf oi
+				sa dj foi asdj
+				fsdaj oifas doif nois adnfoia sn df oin asd
+				iof naosi dnfp
+				dsan fpoa sndfo ids an foijas
+				fdsa io fnpaso dinfoisd anfoiasn
+				fdpo i nsad oip fnpaos
+				dnfi opda sn foi nsda </p>
+			</div>
 		</div>
 	</div>
+</section>
+
+<!-- three unique carousels for this section -->
+<section class="my-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div id="carouselExampleSlidesOnly" class="carousel slide"
+					  data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://preview.redd.it/3cec72vxxgv31.png?width=640&crop=smart&auto=webp&s=c349113db92794dcb4ca4e56be182a7416159747"
+								  class="d-block h-100 w-100 rounded-circle img-fluid" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://preview.redd.it/ha3x4w6iqhv31.jpg?width=640&crop=smart&auto=webp&s=ce589715f6b0dafef66dc2ea1ce61aa742a63151"
+								  class="img-fluid d-block h-100 w-100 rounded-circle" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://preview.redd.it/pcku9dumncu31.png?width=640&crop=smart&auto=webp&s=fd0a00833afee6f835e8c95bfecc72cfc554fba2"
+								  class="img-fluid d-block h-100 w-100 rounded-circle" alt="">
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h4 class="my-4">The Title for this Carousel</h4>
+								<p class="text-justify text-break">some sample text for this carousel.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div id="carouselExampleSlidesOnly" class="carousel slide"
+					  data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://preview.redd.it/0hokk6dthov31.jpg?width=640&crop=smart&auto=webp&s=a15622df1a6d9ebee79ca44d62b4a58c011949d3"
+								  class="d-block h-100 w-100 rounded-circle img-fluid" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://preview.redd.it/yt5rsmj13qv31.png?width=640&crop=smart&auto=webp&s=82879d5243d82cd69c7d0ce954800332bb6c3b28"
+								  class="img-fluid d-block h-100 w-100 rounded-circle" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://preview.redd.it/qg1nmzek2xv31.jpg?width=960&crop=smart&auto=webp&s=4dcedf9ad4fbba1df3f35cdc808b7452775ff8c6"
+								  class="img-fluid d-block h-100 w-100 rounded-circle" alt="">
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h4 class="my-4">The Title for this Carousel</h4>
+								<p class="text-justify text-break">some sample text for this carousel.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div id="carouselExampleSlidesOnly" class="carousel slide"
+					  data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://preview.redd.it/1k1on1z7dgv31.png?width=640&crop=smart&auto=webp&s=9443587f927d9cb20d723e8140610dc67bcdbe28"
+								  class="d-block h-100 w-100 rounded-circle img-fluid" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://preview.redd.it/a08c55o31av31.jpg?width=640&crop=smart&auto=webp&s=f73c479f6329e0682f2f923fadd484dafc2eadfa"
+								  class="img-fluid d-block h-100 w-100 rounded-circle" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="https://preview.redd.it/6kxokc86lzt31.png?width=640&crop=smart&auto=webp&s=413494860fede789477e7c9b5b980c0e487a6dde"
+								  class="img-fluid d-block h-100 w-100 rounded-circle" alt="">
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h4 class="my-4">The Title for this Carousel</h4>
+								<p class="text-justify text-break">some sample text for this carousel.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 </body>
 </html>
